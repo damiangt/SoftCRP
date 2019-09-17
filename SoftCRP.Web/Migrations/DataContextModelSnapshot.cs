@@ -25,15 +25,12 @@ namespace SoftCRP.Web.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Apellido")
-                        .IsRequired()
                         .HasMaxLength(50);
 
                     b.Property<string>("Cedula")
-                        .IsRequired()
                         .HasMaxLength(10);
 
                     b.Property<string>("Nombre")
-                        .IsRequired()
                         .HasMaxLength(50);
 
                     b.HasKey("Id");

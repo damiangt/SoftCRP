@@ -24,6 +24,6 @@ namespace SoftCRP.Web.Data.Entities
 
         [Display(Name = "Nombres")]
 
-        public string FullName => $"{Nombre } {Apellido}"; 
+        public string FullName => $"{Nombre } {Apellido}";
     }
 }

@@ -9,8 +9,8 @@ using SoftCRP.Web.Data;
 namespace SoftCRP.Web.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20190917160837_InitialDb3")]
-    partial class InitialDb3
+    [Migration("20190917164940_InitialDb")]
+    partial class InitialDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -27,15 +27,12 @@ namespace SoftCRP.Web.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Apellido")
-                        .IsRequired()
                         .HasMaxLength(50);
 
                     b.Property<string>("Cedula")
-                        .IsRequired()
                         .HasMaxLength(10);
 
                     b.Property<string>("Nombre")
-                        .IsRequired()
                         .HasMaxLength(50);
 
                     b.HasKey("Id");
